@@ -1,12 +1,20 @@
 # Curso de Git Pages
 
+La info del taller esta en: [Web del Taller Web Pages](htpps://github.com/francho/taller-github-pages)
+
+```
+htpps://github.com/francho/taller-github-pages
+```
+
 ## Crear un repositorio en github
 
 Una vez creado el repositorio, deberemos activar en `Settings` del repositorio, en el apartado `GitHub Pages`, seleccionar la fuente/source *(por defecto escogeremos **master branch** como fuente para el sitio Web a servir del **GitHub Pages**)*, y elegir un theme/tema para nuestro sitio Web *(Change Theme)*.
 
 Una vez hecho lo anterior, para acceder a la Web usaremos el siguiente formato:
 
+```
 https://amartinr1977.github.io/***nombre_del_repositorio_github***/
+```
 
 ## Referencia de Markdown
 
@@ -88,3 +96,18 @@ Esto es mi primer artículo ...
 ## Personalización
 
 Los directorios que empiezan por guión bajo tienen un tratamiento especial por `jekyll`: `_layouts` *(configura los estilos)*, `_posts` *(entradas del sitio Web)*, `_site` *(el sitio web que sirve, al que da servicio)*, etc.
+
+## Comprobación y depuración
+
+[Web de Depueración](https://travis-ci.org)
+```
+https://travis-ci.org
+```
+
+## Web Page por defecto del usuario
+
+Definir un repositorio exactamente
+
+```
+amartinr1977.github.io
+```
