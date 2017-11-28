@@ -39,6 +39,12 @@ Para leer el Gemfile y instalar las dependencias ejecutar, para ya poder probar 
 bundle install 
 ```
 
+Una vez todo lo anterior, para tener un servidor local:
+
+```
+yekyll server
+```
+
 ## Páginas a visualizar
 
 Por defecto, la página `index` del sitio Web es el `README.md`.  Si queremos acceder a otra página del proyecto, por ejemplo, `referencias.md`, tan sólo habrá que añadir el nombre de ese archivo al final de la URL:
