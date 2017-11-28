@@ -9,3 +9,10 @@
 - Opción 3
 - Opción 4
 - Opción 5
+
+## Una tabla
+
+| Columna 1 | Columna 2 | Columna 3 |
+|-----------|-----------|-----------|
+| Este es el contenido de la primera columna | De la segunda | tercera |
+|| otra mas | que |
