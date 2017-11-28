@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="taller-github : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=3ff8aa358cca4db7a20f2b18221a2086193170a6">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Curso de Git Pages | taller-github</title>
+<meta property="og:title" content="Curso de Git Pages" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="taller-github" />
+<script type="application/ld+json">
+{"name":"taller-github","description":null,"author":null,"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"Curso de Git Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://github.com/amartinr1977/taller-github">View on GitHub</a>
+
+          <h1 id="project_title">taller-github</h1>
+          <h2 id="project_tagline"></h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="curso-de-git-pages">Curso de Git Pages</h1>
+
+<h2 id="crear-un-repositorio-en-github">Crear un repositorio en github</h2>
+
+<p>Una vez creado el repositorio, deberemos activar en <code class="highlighter-rouge">Settings</code> del repositorio, en el apartado <code class="highlighter-rouge">GitHub Pages</code>, seleccionar la fuente/source <em>(por defecto escogeremos <strong>master branch</strong> como fuente para el sitio Web a servir del <strong>GitHub Pages</strong>)</em>, y elegir un theme/tema para nuestro sitio Web <em>(Change Theme)</em>.</p>
+
+<p>Una vez hecho lo anterior, para acceder a la Web usaremos el siguiente formato:</p>
+
+<p>https://amartinr1977.github.io/<strong><em>nombre_del_repositorio_github</em></strong>/</p>
+
+<h2 id="referencia-de-markdown">Referencia de Markdown</h2>
+
+<p><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">Sintaxis de Markdown</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://help.github.com/articles/basic-writing-and-formatting-syntax/
+</code></pre></div></div>
+
+<h2 id="instalación-de-ruby--20">Instalación de Ruby (&gt; 2.0)</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get install ruby ruby-all-dev
+ruby --version
+</code></pre></div></div>
+
+<h2 id="jekyll">Jekyll</h2>
+
+<p>Instalamos el gestor de dependencias de ruby bundler:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo gem install bundler
+</code></pre></div></div>
+
+<p>Para poder probar las pages web sin necesidad de subir el código markdown del git a github.</p>
+
+<p>Crear un Gemfile:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+
+gem 'github-pages', group: :jekyll_plugins
+</code></pre></div></div>
+
+<p>Para leer el Gemfile y instalar las dependencias ejecutar, para ya poder probar las Webs localmente:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install 
+</code></pre></div></div>
+
+<p>Una vez todo lo anterior, para tener un servidor local:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll server
+</code></pre></div></div>
+
+<p>Al ejecutar el comando anterior, <code class="highlighter-rouge">jekyll server</code>, genera el directorio <code class="highlighter-rouge">_site</code> con todo el sitio Web a servir.</p>
+
+<p>Para acceder ahora al sitio localmente <em>(al index, que es el README.md)</em>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://127.0.0.1:4000
+</code></pre></div></div>
+
+<p>Para acceder a <em>referencias.md</em>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://127.0.0.1:4000/referencias
+</code></pre></div></div>
+
+<p>Cuando haya cambios en la configuración de <code class="highlighter-rouge">jekyll</code>, será necesario parar y volver a arrancar el servicio.  Toda la configuración de <code class="highlighter-rouge">jekyll</code> esta en el archivo <code class="highlighter-rouge">_config.yml</code>.</p>
+
+<h2 id="páginas-a-visualizar">Páginas a visualizar</h2>
+
+<p>Por defecto, la página <code class="highlighter-rouge">index</code> del sitio Web es el <code class="highlighter-rouge">README.md</code>.  Si queremos acceder a otra página del proyecto, por ejemplo, <code class="highlighter-rouge">referencias.md</code>, tan sólo habrá que añadir el nombre de ese archivo al final de la URL:</p>
+
+<h2 id="convertir-página-web-en-un-blog">Convertir página Web en un Blog</h2>
+
+<p>Se crea una carpeta llamada <code class="highlighter-rouge">_post</code> dentro del repositorio, y dentro se añaden fichero markdown <code class="highlighter-rouge">*.md</code> con el formato <code class="highlighter-rouge">fecha_entre_guiones-nombre.md</code> <em>(touch _posts/2017-11-28-primer_post.md)</em>, y dentro los campos siguientes:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: Titulo ...
+--
+
+Esto es mi primer artículo ...
+</code></pre></div></div>
+
+<h2 id="personalización">Personalización</h2>
+
+<p>Los directorios que empiezan por guión bajo tienen un tratamiento especial por <code class="highlighter-rouge">jekyll</code>: <code class="highlighter-rouge">_layouts</code> <em>(configura los estilos)</em>, <code class="highlighter-rouge">_posts</code> <em>(entradas del sitio Web)</em>, <code class="highlighter-rouge">_site</code> <em>(el sitio web que sirve, al que da servicio)</em>, etc.</p>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">taller-github maintained by <a href="http://github.com/amartinr1977">amartinr1977</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
