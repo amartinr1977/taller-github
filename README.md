@@ -26,7 +26,7 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 ## Instalación de Ruby (> 2.0)
 
-```
+```bash
 apt-get install ruby ruby-all-dev
 ruby --version
 ```
