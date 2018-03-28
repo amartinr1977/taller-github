@@ -27,6 +27,7 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 ## Instalación de Ruby (> 2.0)
 
 ```bash
+# Necesitaremos Ruby para para usar su gestor de dependencias: gem
 apt-get install ruby ruby-all-dev
 ruby --version
 ```
@@ -35,7 +36,7 @@ ruby --version
 
 Instalamos el gestor de dependencias de ruby bundler:
 
-```
+```bash
 sudo gem install bundler
 ```
 
