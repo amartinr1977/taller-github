@@ -13,6 +13,10 @@ git checkout master : para volver a la master
 
 git branch -d dev2 : para eliminar una rama
 
+Para ver cambios en un archivo respecto al último commit:
+
+git diff nombre_archivo
+
 Para forzar un push desaciendo los cambios que hayan podido hacer otros (-f):
 
 git push -f origin master
@@ -48,4 +52,4 @@ git merge nombre_rama
 
 git push origin master
 
-
+8)
