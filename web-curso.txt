@@ -13,3 +13,39 @@ git checkout master : para volver a la master
 
 git branch -d dev2 : para eliminar una rama
 
+Para forzar un push desaciendo los cambios que hayan podido hacer otros (-f):
+
+git push -f origin master
+
+Forma de trabajar para hacer cambios en un proyecto:
+
+1) Creamos una rama y nos cambiamos a ella:
+
+git checkout -b nombre_rama
+
+2) Hacemos los cambios que queramos: editar archivos, crear nuevos, etc.
+
+3) Adoptamos los cambios:
+3.1) git status : nos dice los cambios que hemos hecho, en que archivos
+3.2) git add lista_nombres_de_archivos
+3.3) git commit -m "Comentario"
+
+4) Cambiamos a la rama master:
+
+git branch:  para saber en que rama estamos (aparecerá en color verde)
+git checkout master
+
+5) Descargamos los cambios que hayan podido haber hecho otros colaboradores del proyecto:
+
+git pull
+
+6) Con la rama master ya actualizada mergeamos los cambios hechos en nuestra rama en la master:
+
+git branch (estando en la master)
+git merge nombre_rama
+
+7) Por último subimos los cambios al servidor GIT:
+
+git push origin master
+
+

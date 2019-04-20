@@ -1,5 +1,7 @@
 # Curso de Git Pages
 
+Added text
+
 La info del taller esta en: [Web del Taller Web Pages](htpps://github.com/francho/taller-github-pages)
 
 ```
@@ -112,5 +114,8 @@ Definir un repositorio exactamente
 ```
 amartinr1977.github.io
 ```
+<<<<<<< HEAD
 
 ## Comandos básicos de GIT
+=======
+>>>>>>> 82f39ef295bf818710497c0c5371ee95a020f609
