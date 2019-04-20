@@ -1,1 +1,15 @@
 http://github.com/francho/taller-github-pages
+
+git branch : para conocer las ramas del proyecto
+git branch dev2 :  crea una nueva rama de nombre dev2
+git checkout dev2 : para cambiar de rama de trabajo (la rama debe existir)
+git checkout -b dev2 : cambia y crea la rama si no existe
+
+
+git log : para ver un log de los cambios hechos
+git checkout master : para volver a la master
+
+
+
+git branch -d dev2 : para eliminar una rama
+
