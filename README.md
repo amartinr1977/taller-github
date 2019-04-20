@@ -1,5 +1,7 @@
 # Curso de Git Pages
 
+Added text
+
 La info del taller esta en: [Web del Taller Web Pages](htpps://github.com/francho/taller-github-pages)
 
 ```
